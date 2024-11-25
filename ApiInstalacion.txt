@@ -1,0 +1,112 @@
+antes de todo esto debemos verificar si tenemos instalado algun tipo de version de leaf,
+si no debemos instalarlo, asi cmo node
+
+
+php
+framework/ leaf 3.0
+eloquent
+--
+una api le puede dar servicio a un formulario, una framework, front-edns
+----
+API"interfaz de programacion de aplicaciones", permite la conexion entre dos apps
+Rest "Transferencia de estado representacional" , get, put, delete, etc.
+----
+Herramientas necesarias:
+XAMPP
+MYSQL 
+Composer manejador de depencias de php
+
+-----
+modelo, vista, controlador 
+
+el controlador te permite acceder a un modelo.
+el modelo te permite acceder a una vista.
+la vista te permite acceder a un controlador.
+
+primero ingresas a la routa y despues te manda al controlador, y luego al modleo
+-----
+estos verbos nos van a permitir modular toda la aplicacion 
+
+get te devuelte informacion
+post te permite ingresar informacion 
+put te permite actualizar informacion
+delete te permite eliminar informacion 
+---
+Instalacion 
+
+comando para descargar Leaf API
+
+composer create-project leafs/api <project-name> 
+
+--
+estructura del proyecto
+ composer.json 
+
+routas: las "/" son las rutas
+routas: son lo que le va decir al usuario que ver especificamente
+
+modelos: es el monitorio de una tabla o base de datos
+
+controladores: controlan la informacion 
+
+--
+.env
+
+en esta parte se configura la base de datos 
+DB_USER:root
+DB_PASSWORD: 
+
+--
+Usando rutas y accesos
+en php myadmin creamos una base de datos
+
+id
+nombre
+primerapellido
+segundoapellido
+correo
+
+// son un control de ejemplos de registro
+created_at 
+updated_at
+
+// vamos a usar el apartado de select * from tlb_contactos, tomando ciertos datos
+de la carpeta modelos
+
+<? php
+namespace App\Model;
+
+class contactos extends Model{
+protected $table='tbl_contactos';
+tlb_contactos
+
+--
+
+carpeta modelos
+
+_app.php
+
+app()->get("/contactos", funtion(){
+response()-> json(["message" => "Aqui vamos a entrar en la clase contactos
+(Esta en el modelo) mediante el controlador " ]};
+
+
+---
+creamos contactosController.php
+
+// esto nos va permitir responder 
+
+namespace App\Controllers;
+use app\models\contactos;
+
+class contactosController extends controller{
+ public funtion index(){
+//esto lo  vamos 
+response()-> json(["message" => "Aqui vamos a entrar en la clase contactos
+(Esta en el modelo) mediante el controlador " ]};
+
+
+}}
+
+
+

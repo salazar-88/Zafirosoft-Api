@@ -1,0 +1,203 @@
+/*COLOR DE LA BARRA DE BOTONES, BOTONES Y FONDO DEL DASHBOARD*/
+:root {
+    --primary: #fff;
+    --secondary: #ffffff;
+    --light: #0e0e0e;
+    --dark: #fbfbfb;
+}
+
+
+/*COLOR DE FONDO DE LOS BOTONES DE LA BARRA DE LA IZQUIERA (DASHBOARD, ELEMENTS, ETC)*/
+.sidebar .navbar .navbar-nav .nav-link:hover, .sidebar .navbar .navbar-nav .nav-link.active {
+    color: #009688;
+    background: #ffffff;
+    border-color: #009688;
+
+}
+
+.text-primary {
+    color: #7e8c69 !important;
+}
+
+.bg-secondary {
+    background-color: #f2f2f2 !important;
+}
+
+.content .navbar .navbar-nav .nav-link:hover, .content .navbar .navbar-nav .nav-link.active {
+    color: #7e8c69;
+}
+
+/*COLOR DEL ICONO DEL = AL LADO DE LA BARRA DE BUSQUEDA*/
+a {
+    color: #575544;
+    text-decoration: none;
+}
+
+.bg-dark {
+    background-color: #ffffff !important;
+
+}
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+}
+
+
+
+/*FONDO DE SIGN IN*/
+
+body {
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #7e8c69;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+/*FONDO DE INFORMACION DE LOS APARTADOS DEL SIGN IN*/
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6C7293;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #fff;
+    appearance: none;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #6C7293;
+    background-color: #fff;
+    border-color: #f1c8cb;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0,0,0,0.25);
+    appearance: none;
+    color-adjust: exact;
+}
+
+/*COLOR DE LOS BOTONES DE SIGN IN*/
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #009688;
+    border: none;
+
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #816a00;
+    border: none;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #009688;
+    box-shadow: 0 0 0 .25rem rgba(238,57,57,0.5);
+    border: none;
+
+}
+
+
+.form-check-input:checked {
+    background-color: #9cad8c;
+    border-color: NONE;
+}
+
+.form-check-input:checked {
+    /* background-color: #EB1616; */
+    border-color: #FFF;
+}
+
+.form-check-input:focus {
+    border-color: #7e8c69;
+    outline: 0;
+    box-shadow: NONE;
+}
+
+/*COLOR DEL TEXTO OLVIDE MI CONTRASENA*/
+
+a:hover {
+    color: #7e8c69;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid  #000000;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #ffffff;
+
+}
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #27b19e6e;
+    border: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+.button:hover {
+    background-color: #000000; /* Azul más oscuro */
+    box-shadow: 0 0 10px 2px rgba(0, 123, 255, 0.7);
+  }
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
